@@ -1,0 +1,22 @@
+.button{
+    background: var(--clr-primary);
+    box-shadow: 1rem 2rem 4rem 1rem rgba(0, 0, 0, 0.5);
+    border-radius: var(--button-border-radius, 1000000rem);
+
+    outline: none;
+    appearance: none;
+    border: none;
+
+    cursor: pointer;
+
+    font-size: 24rem;
+    font-weight: 600;
+    color: var(--clr-gray-1);
+
+    transition: transform 200ms ease-in-out;
+    &:active, &:hover{
+        transform: scale(1.05);
+    }
+
+
+}

@@ -1,0 +1,19 @@
+.collapse{
+    
+}
+
+.collapse--header{
+    width: 100%;
+    cursor: pointer;
+    user-select: none;
+}
+
+.collapse--content{
+    width: 100%;
+    max-height: 0;
+    overflow: hidden;
+}
+
+.collapse--content--expanded{
+    max-height: unset;
+}

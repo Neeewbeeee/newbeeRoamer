@@ -1,0 +1,10 @@
+.link{
+    font-size: 20rem;
+    font-weight: 600;
+    color: var(--clr-fn-link);
+
+    text-decoration: none;
+    &:visited{
+        text-decoration: none;
+    }
+}

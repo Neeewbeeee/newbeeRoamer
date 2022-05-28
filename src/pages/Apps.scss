@@ -1,0 +1,12 @@
+.apps{
+    background-image: linear-gradient(180deg, #94CFFF 0%, #C7E6FF 23%, #FFFFFF00 100%);
+    z-index: -2;
+}
+
+.apps--bg{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    z-index: -1;
+}

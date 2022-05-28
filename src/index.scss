@@ -1,0 +1,91 @@
+html{
+    font-size: 1px;
+}
+
+body{
+    min-height: 100vh;
+}
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+a{
+    outline: none;
+    appearance: none;
+    text-decoration: none;
+}
+
+:root{
+
+    // 主题蓝
+    --clr-primary:   #40A9FF;
+    --clr-primary-l1:#69C0FF;
+    --clr-primary-l2:#91D5FF;
+    --clr-primary-l3:#BAE7FF;
+    --clr-primary-l4:#E6F7FF;
+    --clr-primary-d1:#1890FF;
+    --clr-primary-d2:#096DD9;
+    --clr-primary-d3:#0050B3;
+    --clr-primary-d4:#003A8C;
+    --clr-primary-d5:#002766;
+
+    // 辅助橙
+    --clr-secondary:   #FF8425;
+    --clr-secondary-l1:#FFA14F;
+    --clr-secondary-l2:#FFBB78;
+    --clr-secondary-l3:#FFD3A1;
+    --clr-secondary-l4:#FFE8C9;
+    --clr-secondary-l5:#FFF9F0;
+    --clr-secondary-d1:#D96416;
+    --clr-secondary-d2:#B34709;
+    --clr-secondary-d3:#8C2F00;
+    --clr-secondary-d4:#661F00;
+
+    // 灰阶
+    --clr-gray-1: #FFFFFF;
+    --clr-gray-2: #FAFAFA;
+    --clr-gray-3: #F5F5F5;
+    --clr-gray-4: #F0F0F0;
+    --clr-gray-5: #D9D9D9;
+    --clr-gray-6: #BFBFBF;
+    --clr-gray-7: #8C8C8C;
+    --clr-gray-8: #595959;
+    --clr-gray-9: #434343;
+    --clr-gray-10:#262626;
+    --clr-gray-11:#1F1F1F;
+    --clr-gray-12:#141414;
+    --clr-gray-13:#000000;
+
+    // 功能色
+    --clr-fn-warn:#EA8222;
+    --clr-fn-link:#40A9FF;
+    --clr-fn-error:#F5222D;
+    --clr-fn-success:#73D13D;
+}
+
+// Utilities
+.flex-space{
+    flex: 1;
+}
+
+@mixin Container($justify, $align, $direction: row){
+    display: flex;
+    justify-content: $justify;
+    align-items: $align;
+    flex-direction: $direction;
+}
+
+.flex-center{@include Container(center, center)}
+.flex-start{@include Container(flex-start, center)}
+.flex-end{@include Container(flex-end, center)}
+.flex-between{@include Container(space-between, center)}
+.flex-around{@include Container(space-around, center)}
+
+.flex-col-center{@include Container(center, center, column)}
+.flex-col-start{@include Container(flex-start, center, column)}
+.flex-col-end{@include Container(flex-end, center, column)}
+.flex-col-between{@include Container(space-between, center, column)}
+.flex-col-around{@include Container(space-around, center, column)}

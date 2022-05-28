@@ -1,0 +1,109 @@
+
+.app-list{
+    min-height: 200vh;
+}
+
+.app-list--heading{
+    margin-bottom: 68rem;
+}
+
+.app-list--title{
+}
+
+.app-list--create-btn{
+    background: #1890FF;
+    box-shadow: 0rem 2rem 10rem 0rem rgba(0, 0, 0, 0.3);
+    border-radius: 8rem;
+
+    width: 157rem;
+    height: 43rem;
+}
+
+.app-list--collapse-header{
+    svg{
+        width: 28rem;
+        height: 28rem;
+        fill: var(--clr-gray-8);
+        transform: rotate(-90deg);
+
+        transition: transform 200ms ease-in-out;
+    }
+    span{
+        font-size: 24rem;
+        font-weight: 600;
+        color: #B34709;
+        margin: 0 12rem;
+    }
+    div{
+        height: 1rem;
+        flex: 1;
+        background-color: #979797;
+    }
+
+    margin: 61rem 0 35rem 0;
+}
+
+.collapse--header--expanded{
+    svg{
+        transform: none;
+    }
+}
+
+.app-list--collapse-content{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    width: 100%;
+    gap: 61rem;
+
+    font-size: 20rem;
+    font-weight: 400;
+    color: #434343;
+}
+
+.app-list--app-card{
+    min-width: 0;
+    cursor: pointer;
+
+    &:hover .app-list--card-image{
+        border: 2.5rem solid var(--clr-primary);
+    }
+
+    &:hover .app-list--card-app-name{
+        color: var(--clr-primary-d2);
+    }
+}
+
+.app-list--card-image{
+    object-fit: cover;
+    width: 100%;
+
+    border-radius: 16rem;
+
+    transition: border 400ms ease-in-out;
+    border: 2.5rem solid transparent;
+}
+
+.app-list--card-heading{
+    margin: 21rem 0 14rem 0;
+}
+
+.app-list--card-app-name{
+    font-size: 24rem;
+    font-weight: 600;
+    color: var(--clr-gray-8);
+
+    transition: color 400ms ease-in-out;
+}
+
+.app-list--card-views{
+    font-size: 18rem;
+    font-weight: 600;
+    color: var(--clr-primary-d4);
+}
+
+.app-list--card-descrip{
+    font-size: 20rem;
+    font-weight: 400;
+    color: #434343;
+    color: var(--clr-gray-9);
+}
